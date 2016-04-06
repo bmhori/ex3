@@ -42,26 +42,26 @@ void display()
 
 int operacao()
 {
-    int X;
-    char M, D, P, S;
-
+    float X;
+    //char M, D, P, S;
+    Y=getchar();
     switch(Y)
     {
-        case M:
+        case 'M':
             X = a[top]*a[top-1];
-            printf("%d", X);
+            printf("%f", X);
             break;
-        case D:
+        case 'D':
             X = a[top]/a[top-1];
-            print("%d", X);
+            printf("%f", X);
             break;
-        case P:
+        case 'P':
             X = a[top]+a[top-1];
-            print("%d", X);
+            printf("%f", X);
             break;
-        case S:
+        case 'S':
             X = a[top]-a[top-1];
-            print("%d", X);
+            printf("%f", X);
             break;
     }
 }
@@ -93,7 +93,7 @@ int main()
             printf("\nP Soma;");
             printf("\nS Subtracao;");
             printf("\nQual sua escolha? ");
-            Y = getchar();
+            //Y = getchar();
             operacao();
         }
 
@@ -104,7 +104,7 @@ int main()
             display();
     }
     while(choice!=0);
-    getch();
+    getchar();
 
     return 0;
 }
