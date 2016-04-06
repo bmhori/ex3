@@ -1,0 +1,7 @@
+ex3.c: In function ‘inicio’:
+ex3.c:78:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
+         scanf("%s", &exp);
+         ^
+ex3.c:71:9: warning: unused variable ‘cont_p’ [-Wunused-variable]
+     int cont_p=0;
+         ^
